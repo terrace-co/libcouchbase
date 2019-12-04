@@ -21,7 +21,7 @@
 #else
 #define JSONSL_API static
 #endif
-#include "contrib/jsonsl/jsonsl.c"
+#include "contrib/jsonsl/jsonsl.h"
 #include "contrib/lcb-jsoncpp/lcb-jsoncpp.h"
 #include "parser.h"
 

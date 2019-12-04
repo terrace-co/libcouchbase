@@ -169,11 +169,9 @@ iotssl_log_errors(lcbio_XSSL *xs)
                 xs->errcode = LCB_SSL_CANTVERIFY;
                 break;
 
-            case SSL_R_BAD_PROTOCOL_VERSION_NUMBER:
             case SSL_R_UNKNOWN_PROTOCOL:
             case SSL_R_WRONG_VERSION_NUMBER:
             case SSL_R_UNKNOWN_SSL_VERSION:
-            case SSL_R_UNSUPPORTED_SSL_VERSION:
                 xs->errcode = LCB_PROTOCOL_ERROR;
                 break;
             default:
