@@ -17,7 +17,7 @@
 #include "internal.h"
 #include <vector>
 #include <string>
-#include <include/libcouchbase/subdoc.h>
+#include "libcouchbase/subdoc.h"
 
 static lcb_size_t
 get_value_size(mc_PACKET *packet)
